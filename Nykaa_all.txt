@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Shop</title>
+    <link rel="stylesheet" href="Nykaa 2D.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Nykaa Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <h2>Welcome to Nykaa</h2>
+        <p>Your beauty, skincare, and makeup destination!</p>
+    </section>
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://plus.unsplash.com/premium_photo-1677526496932-1b4bddeee554?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlwc3RpY2t8ZW58MHx8MHx8fDA%3D" alt="">
+                <h3>Lipstick</h3>
+                <p>₹499</p>
+                <button onclick="addToWishlist('Lipstick')">Add to Wishlist</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5c1UL-phZ1mq9-TxqZOjmrGw5O3fHqeK5BDRbrd2EuPL8KYlYp-wRndeLzZGbV1SP0YKEfRZ7Hj83aJUa8_bZcVKJnsBHN_dri4PEoHs4Ow_BDEp6_afE-njxhtGwjGqXzGBObE9J&usqp=CAc" alt="">
+                <h3>Face Cream</h3>
+                <p>₹799</p>
+                <button onclick="addToWishlist('Face Cream')">Add to Wishlist</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue333/Unveiling-The-Bold-Feminine-Spirit.jpg" alt="">
+                <h3>Perfume</h3>
+                <p>₹899</p>
+                <button onclick="addToWishlist('Perfume')">Add to Wishlist</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="login" class="section">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button type="button" onclick="loginUser()">Login</button>
+        </form>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: support@nykaashop.com</p>
+        <p>Customer Care: 1800 267 4444 </p>
+    </section>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Nykaa Shop is your trusted beauty partner offering 100% genuine products!</p>
+    </section>
+    <section class="section">
+        <h2>Your Wishlist</h2>
+        <ul id="wishlist"></ul>
+    </section>
+    <script src="Nykaa 3.js"></script>
+</body>
+</html>
